@@ -1,0 +1,93 @@
+/**
+ * Login Page
+ *
+ * @format
+ */
+
+.Login-Page {
+  min-height: 100vh;
+  background-image: url("../../public/Image/1.png");
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.Login-Page .Login-Div {
+  max-width: 600px;
+  width: 100%;
+  display: block;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Login-Page .Login-Div .logo {
+  color: #000;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.Login-Page .Login-Div .container {
+  border-radius: 16px;
+  background: #fff;
+  padding: 16px;
+}
+.Login-Page .Login-Div .container .head {
+  color: #000;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  line-height: normal;
+}
+.Login-Page .Login-Div .container input {
+  max-width: 400px;
+  width: 100%;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #b9b9b9;
+  outline: none;
+  font-size: 16px;
+  font-family: Quicksand;
+  background: #fff;
+  box-shadow: 8px 4px 20px 0px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+
+.Login-Page .Login-Div .container .forget-password {
+  max-width: 400px;
+  width: 100%;
+  text-align: right;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  color: #f00;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.Login-Page .Login-Div .container .login-button {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #b9b9b9;
+  background: #cbc273;
+  padding: 10px;
+  display: block;
+  margin: auto;
+  margin-top: 40px;
+  font-family: Quicksand;
+  color: #F5F5F5;
+  font-size: 20px;
+  font-weight: ;
+  box-shadow: 8px 4px 20px 0px rgba(0, 0, 0, 0.3);
+}

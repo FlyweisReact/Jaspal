@@ -1,0 +1,18 @@
+/** @format */
+
+.Navbar {
+  padding: 10px;
+}
+.Navbar .logo {
+  color: #000;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+.Navbar .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}

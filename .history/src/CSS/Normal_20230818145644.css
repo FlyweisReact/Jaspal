@@ -1,0 +1,28 @@
+/**
+ * Login Page
+ *
+ * @format
+ */
+
+.Login-Page {
+  min-height: 100vh;
+  background-image: url("../../public/Image/1.png");
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Login-Page .Login-Div {
+  max-width: 600px;
+  width: 100%;
+  display: block;
+}
+.Login-Page .Login-Div .logo {
+  color: #000;
+  font-family: Inter;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
+}
