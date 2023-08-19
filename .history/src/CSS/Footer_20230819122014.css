@@ -1,0 +1,11 @@
+.Footer-Div{
+    background: #EDEDED;
+}
+.Footer-Div .container{
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+}
+.Footer-Div .container ul{
+
+}

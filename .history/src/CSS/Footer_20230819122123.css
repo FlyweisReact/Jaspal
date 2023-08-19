@@ -1,0 +1,22 @@
+.Footer-Div{
+    background: #EDEDED;
+}
+.Footer-Div .container{
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+}
+.Footer-Div .container ul{
+    padding-left: 0;
+}
+.Footer-Div .container ul li{
+    padding-left: 0;
+}
+.Footer-Div .container ul li.head{
+color: #000;
+font-family: Familjen Grotesk;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
