@@ -11,19 +11,14 @@ import ShippingAddres from "./Pages/Shipping/ShippingAddres";
 import PlaceOrder from "./Pages/Place Order/PlaceOrder";
 import ThankYou from "./Pages/Thankyou/ThankYou";
 import MyOrders from "./Pages/MyOrders/MyOrders";
-import { ReactNotifications } from 'react-notifications-component'
 
 // CSS
 import "./CSS/Normal.css";
 import "./CSS/Navbar.css";
 import "./CSS/Footer.css";
-import './CSS/Laptop.css'
-import './CSS/Mobile.css'
-import Signup from "./Pages/Signup/Signup";
 const App = () => {
   return (
     <>
-       <ReactNotifications  />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Login />} />
@@ -35,8 +30,6 @@ const App = () => {
           <Route path='/place-order' element={<PlaceOrder />} />
           <Route path="/thank-you" element={<ThankYou />} />
           <Route  path="/my-order" element={<MyOrders />} />
-
-          <Route path="/user-register" element={<Signup />} />
         </Routes>
       </BrowserRouter>
     </>

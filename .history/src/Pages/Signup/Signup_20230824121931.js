@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { userLogin } from "../../Repository/Authentication";
 
-const Login = () => {
+const Signup = () => {
   const [email, setEmail] = useState(null);
   const [password, setPassword] = useState(null);
   const userType = "USER";
@@ -50,10 +50,8 @@ const Login = () => {
               Login
             </button>
 
-            <Link to="/user-register" style={{ textDecoration: "none" }}>
-              <button className="signup-button" type="butoon">
-                Sign Up
-              </button>
+            <Link to="/user-register">
+              <button className="signup-button">Sign Up</button>
             </Link>
 
             <div className="three-img">
@@ -68,4 +66,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;

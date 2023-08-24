@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { Link, useNavigate } from "react-router-dom";
+import {  Link, useNavigate } from "react-router-dom";
 import { userLogin } from "../../Repository/Authentication";
 
 const Login = () => {
@@ -18,7 +18,7 @@ const Login = () => {
 
   const postHandler = (e) => {
     e.preventDefault();
-    dispatch(userLogin(payload, navigate));
+    dispatch(userLogin(payload ,navigate));
   };
 
   return (
@@ -32,7 +32,7 @@ const Login = () => {
               type="email"
               name="Email"
               onChange={(e) => setEmail(e.target.value)}
-              required
+              required  
               placeholder="Registered Email Address"
             />
             <input
@@ -50,11 +50,8 @@ const Login = () => {
               Login
             </button>
 
-            <Link to="/user-register" style={{ textDecoration: "none" }}>
-              <button className="signup-button" type="butoon">
-                Sign Up
-              </button>
-            </Link>
+          <Link to='/'
+            <button className="signup-button">Sign Up</button>
 
             <div className="three-img">
               <img src="/Image/2.png" alt="" />

@@ -19,7 +19,6 @@ import "./CSS/Navbar.css";
 import "./CSS/Footer.css";
 import './CSS/Laptop.css'
 import './CSS/Mobile.css'
-import Signup from "./Pages/Signup/Signup";
 const App = () => {
   return (
     <>
@@ -36,7 +35,7 @@ const App = () => {
           <Route path="/thank-you" element={<ThankYou />} />
           <Route  path="/my-order" element={<MyOrders />} />
 
-          <Route path="/user-register" element={<Signup />} />
+          <Route path="/"
         </Routes>
       </BrowserRouter>
     </>

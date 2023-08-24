@@ -1,24 +1,23 @@
 /** @format */
 
 import React, { useState } from "react";
-import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-import { userLogin } from "../../Repository/Authentication";
+import {  userRegistration } from "../../Repository/Authentication";
 
-const Login = () => {
+const Signup = () => {
   const [email, setEmail] = useState(null);
   const [password, setPassword] = useState(null);
+  const [phone, setPhone] = useState(null);
+  const [fullName, setFullName] = useState(null);
   const userType = "USER";
 
   const navigate = useNavigate();
 
-  const payload = { email, password, userType };
-
-  const dispatch = useDispatch();
+  const payload = { email, password, userType, phone, fullName };
 
   const postHandler = (e) => {
     e.preventDefault();
-    dispatch(userLogin(payload, navigate));
+    userRegistration(payload, navigate);
   };
 
   return (
@@ -26,8 +25,25 @@ const Login = () => {
       <div className="Login-Div">
         <h5 className="logo">BRAND LOG0</h5>
         <div className="container">
-          <p className="head">Login</p>
+          <p className="head">Registration</p>
           <form onSubmit={postHandler}>
+          <input
+              type="text"
+              name="name"
+              onChange={(e) => setFullName(e.target.value)}
+              required
+              placeholder="Full Name"
+            />
+            <input
+              type="tel"
+              minLength={8}
+              maxLength={12}
+              pattern='[0-9]'
+              name="Phone"
+              onChange={(e) => setp(e.target.value)}
+              required
+              placeholder="Registered Email Address"
+            />
             <input
               type="email"
               name="Email"
@@ -42,17 +58,13 @@ const Login = () => {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
-            <a href="/" className="forget-password">
-              {" "}
-              Forgot Password
-            </a>
             <button className="login-button" type="submit">
-              Login
+              Register
             </button>
 
-            <Link to="/user-register" style={{ textDecoration: "none" }}>
-              <button className="signup-button" type="butoon">
-                Sign Up
+            <Link to="/" style={{ textDecoration: "none" }}>
+              <button className="signup-button" type="button">
+                Login
               </button>
             </Link>
 
@@ -68,4 +80,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;

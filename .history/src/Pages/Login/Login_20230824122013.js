@@ -50,10 +50,8 @@ const Login = () => {
               Login
             </button>
 
-            <Link to="/user-register" style={{ textDecoration: "none" }}>
-              <button className="signup-button" type="butoon">
-                Sign Up
-              </button>
+            <Link to="/user-register">
+              <button className="signup-button">Sign Up</button>
             </Link>
 
             <div className="three-img">

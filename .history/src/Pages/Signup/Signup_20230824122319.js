@@ -5,16 +5,17 @@ import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { userLogin } from "../../Repository/Authentication";
 
-const Login = () => {
+const Signup = () => {
   const [email, setEmail] = useState(null);
   const [password, setPassword] = useState(null);
+  const [ phone , setPhone ] = useState(null)
+  const [ fullName , setFullName ] = useState(null)
   const userType = "USER";
 
   const navigate = useNavigate();
 
-  const payload = { email, password, userType };
+  const payload = { email, password, userType , phone , fullName};
 
-  const dispatch = useDispatch();
 
   const postHandler = (e) => {
     e.preventDefault();
@@ -50,9 +51,9 @@ const Login = () => {
               Login
             </button>
 
-            <Link to="/user-register" style={{ textDecoration: "none" }}>
-              <button className="signup-button" type="butoon">
-                Sign Up
+            <Link to="/" style={{textDecoration : 'none'}} >
+              <button className="signup-button" type="button">
+                Login
               </button>
             </Link>
 
@@ -68,4 +69,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;
