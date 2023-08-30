@@ -1,0 +1,106 @@
+/** @format */
+
+@media (max-width: 780px) {
+  .Login-Page .Login-Div {
+    max-width: 90%;
+  }
+  .Login-Page .Login-Div .logo {
+    font-size: 20px;
+  }
+  .Login-Page .Login-Div .container .head {
+    font-size: 18px;
+  }
+  .Navbar .container {
+    display: none;
+  }
+  .Filter-Category {
+    display: none;
+  }
+  .Filter-C .empty-container {
+    display: none;
+  }
+  .offer-products {
+    display: block;
+  }
+  .offer-products .left-container {
+    width: 100%;
+  }
+  .offer-products .left-container .img-container {
+    background-size: contain;
+    margin-top: 20px;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    height: 120px;
+  }
+  .offer-products .left-container .img-container h5 {
+    font-size: 18px;
+  }
+  .offer-products .left-container .img-container button {
+    font-size: 14px;
+    width: 120px;
+  }
+  .offer-products .right-container {
+    width: 100%;
+  }
+  .offer-products .left-container .two-sec {
+    display: block;
+    padding-top: 20px;
+  }
+  .offer-products .left-container .two-sec .right {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .offer-products .right-container .product-container .Main {
+    width: 47%;
+    margin-top: 10px;
+  }
+  .Trending-Product .Main {
+    width: 47%;
+  }
+  .full-width-product {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .full-width-product .Main {
+    width: 42%;
+  }
+  .Footer-Div .container .four-cont {
+    display: block;
+  }
+  .Footer-Div .container .social-links {
+    justify-content: flex-start;
+  }
+
+  .product-indivisual-container {
+    display: block;
+  }
+  .product-indivisual-container .left-container {
+    width: 100%;
+  }
+  .product-indivisual-container .left-container .Multiple-Image {
+    flex-wrap: wrap;
+  }
+  .product-indivisual-container .right-container {
+    width: 100%;
+    padding-top: 40px;
+  }
+  .Rating-Component{
+    padding: 20px;
+  }
+  .myHr{
+    margin-bottom: 10px;
+  }
+  .empty-cart img {
+    width: 100px;
+  }
+  .empty-cart p{
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+  .empty-cart .two-buttons button{
+    margin-top: 0;
+  }
+}
