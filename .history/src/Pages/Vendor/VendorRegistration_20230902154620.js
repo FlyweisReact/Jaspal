@@ -4,12 +4,12 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { userRegistration } from "../../Repository/Authentication";
 
-const Signup = () => {
+const VendorRegistration = () => {
   const [email, setEmail] = useState(null);
   const [password, setPassword] = useState(null);
   const [phone, setPhone] = useState(null);
   const [fullName, setFullName] = useState(null);
-  const userType = "USER";
+  const userType = "VENDOR";
 
   const navigate = useNavigate();
 
@@ -25,7 +25,7 @@ const Signup = () => {
       <div className="Login-Div">
         <h5 className="logo">BRAND LOG0</h5>
         <div className="container">
-          <p className="head">Registration</p>
+          <p className="head">Registration as Vendor</p>
           <form onSubmit={postHandler}>
             <input
               type="text"
@@ -57,18 +57,18 @@ const Signup = () => {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
-            <Link to="/vendor/registration" style={{ color: "black" }} className="forget-password">
+
+            <Link
+              to="/vendor/registration"
+              style={{ color: "black" }}
+              className="forget-password"
+            >
               Register as Vendor
             </Link>
-            <button className="login-button" type="submit">
+
+            <button className="login-button mb-3" type="submit">
               Register
             </button>
-
-            <Link to="/" style={{ textDecoration: "none" }}>
-              <button className="signup-button" type="button">
-                Login
-              </button>
-            </Link>
 
             <div className="three-img">
               <img src="/Image/2.png" alt="" />
@@ -82,4 +82,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default VendorRegistration;

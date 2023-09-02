@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { userRegistration } from "../../Repository/Authentication";
+import {  userRegistration } from "../../Repository/Authentication";
 
 const Signup = () => {
   const [email, setEmail] = useState(null);
@@ -27,7 +27,7 @@ const Signup = () => {
         <div className="container">
           <p className="head">Registration</p>
           <form onSubmit={postHandler}>
-            <input
+          <input
               type="text"
               name="Name"
               onChange={(e) => setFullName(e.target.value)}
@@ -57,9 +57,9 @@ const Signup = () => {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
-            <Link to="/vendor/registration" style={{ color: "black" }} className="forget-password">
-              Register as Vendor
-            </Link>
+             <a href="/" className="forget-password">
+             Register as Vendor
+            </a>
             <button className="login-button" type="submit">
               Register
             </button>

@@ -15,7 +15,6 @@ import { ReactNotifications } from 'react-notifications-component'
 import Signup from "./Pages/Signup/Signup";
 import SubProducts from "./Pages/SubCategoryProduct/SubProducts";
 import Search from "./Pages/searchedProduct/Search";
-import VendorRegistration from "./Pages/Vendor/VendorRegistration";
 
 // CSS
 import "./CSS/Normal.css";
@@ -23,6 +22,7 @@ import "./CSS/Navbar.css";
 import "./CSS/Footer.css";
 import './CSS/Laptop.css';
 import './CSS/Mobile.css';
+import VendorRegistration from "./Pages/Vendor/VendorRegistration";
 const App = () => {
   return (
     <>

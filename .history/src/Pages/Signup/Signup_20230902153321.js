@@ -57,9 +57,9 @@ const Signup = () => {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
-            <Link to="/vendor/registration" style={{ color: "black" }} className="forget-password">
+            <Link href="/" style={{ color: "black" }} className="forget-password">
               Register as Vendor
-            </Link>
+            </a>
             <button className="login-button" type="submit">
               Register
             </button>

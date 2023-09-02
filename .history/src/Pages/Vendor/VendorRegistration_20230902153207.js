@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { userRegistration } from "../../Repository/Authentication";
 
-const Signup = () => {
+const VendorRegistration = () => {
   const [email, setEmail] = useState(null);
   const [password, setPassword] = useState(null);
   const [phone, setPhone] = useState(null);
@@ -57,9 +57,9 @@ const Signup = () => {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
-            <Link to="/vendor/registration" style={{ color: "black" }} className="forget-password">
+            <a href="/" style={{ color: "black" }} className="forget-password">
               Register as Vendor
-            </Link>
+            </a>
             <button className="login-button" type="submit">
               Register
             </button>
@@ -82,4 +82,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default VendorRegistration;
