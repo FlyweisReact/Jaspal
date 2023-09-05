@@ -1650,5 +1650,14 @@
   .full-width-product .Main .product-desc .title {
     font-size: 14px;
   }
-
+  .full-width-product .Main{
+    border: 1px solid #000;
+  }
+  .full-width-product {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .full-width-product .Main {
+    width: 42%;
+  }
 }

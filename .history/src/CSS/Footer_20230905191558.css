@@ -30,7 +30,6 @@
   font-weight: 700;
   line-height: normal;
   padding-top: 10px;
-  cursor: pointer;
 }
 .Footer-Div .container .four-cont {
   display: flex;
@@ -63,17 +62,3 @@
 }
 
 
-@media (max-width : 768px) {
-  .Footer-Div .container ul li.head{
-    font-size: 18px;
-  }
-  .Footer-Div .container ul li {
-    font-size: 14px;
-  }
-  .Footer-Div .container .social-links img {
-    width: 20px;
-  }
-  .copy-right p {
-    font-size: 14px;
-  }
-}

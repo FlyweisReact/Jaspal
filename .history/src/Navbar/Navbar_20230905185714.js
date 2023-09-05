@@ -14,8 +14,6 @@ const Navbar = () => {
   const [openNotification, setOpenNotification] = useState(false);
 
   const [modalShow, setModalShow] = useState(false);
-  const handleClose = () => setModalShow(false);
-  const handleShow = () => setModalShow(true);
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -95,14 +93,14 @@ const Navbar = () => {
 
   return (
     <>
-      <HamSidebar show={modalShow} onHide={handleClose} />
+      <HamSidebar show={modalShow} onHide={() => setModalShow(false) } />
       <div className="Navbar">
         <Link to="/homepage">
           <div className="logo">BRAND LOGO</div>
         </Link>
 
         <div className="container">
-          <i className="fa-solid fa-bars" onClick={handleShow}></i>
+          <i className="fa-solid fa-bars"></i>
 
           <div className="search-bar">
             <input
@@ -110,7 +108,10 @@ const Navbar = () => {
               placeholder="Search"
               onChange={(e) => setQuery(e.target.value)}
             />
-            <i className="fa-solid fa-magnifying-glass"></i>
+            <i
+              className="fa-solid fa-magnifying-glass"
+              
+            ></i>
           </div>
 
           <div className="Right-Container">

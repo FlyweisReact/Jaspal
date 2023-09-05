@@ -6,11 +6,6 @@ import { Link } from "react-router-dom";
 
 const CartCanvas = (props) => {
   const [quantity, setQuantity] = useState(1);
-  const [loading, setLoading] = useState(false);
-  const [cart, setCart] = useState({});
-  const [products, setProducts] = useState([]);
-
-
   return (
     <Offcanvas
       show={props.show}

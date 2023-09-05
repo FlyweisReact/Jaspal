@@ -17,6 +17,7 @@ const Navbar = () => {
   const handleClose = () => setModalShow(false);
   const handleShow = () => setModalShow(true);
 
+
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
@@ -102,7 +103,7 @@ const Navbar = () => {
         </Link>
 
         <div className="container">
-          <i className="fa-solid fa-bars" onClick={handleShow}></i>
+          <i className="fa-solid fa-bars"     onClick={handleShow}></i>
 
           <div className="search-bar">
             <input
@@ -110,7 +111,10 @@ const Navbar = () => {
               placeholder="Search"
               onChange={(e) => setQuery(e.target.value)}
             />
-            <i className="fa-solid fa-magnifying-glass"></i>
+            <i
+              className="fa-solid fa-magnifying-glass"
+        
+            ></i>
           </div>
 
           <div className="Right-Container">

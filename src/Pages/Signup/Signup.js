@@ -3,12 +3,14 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { userRegistration } from "../../Repository/Authentication";
+import Spinner from "react-bootstrap/Spinner";
 
 const Signup = () => {
   const [email, setEmail] = useState(null);
   const [password, setPassword] = useState(null);
   const [phone, setPhone] = useState(null);
   const [fullName, setFullName] = useState(null);
+  const [loading, setLoading] = useState(false);
   const userType = "USER";
 
   const navigate = useNavigate();
@@ -17,7 +19,7 @@ const Signup = () => {
 
   const postHandler = (e) => {
     e.preventDefault();
-    userRegistration(payload, navigate);
+    userRegistration(payload, navigate, setLoading);
   };
 
   return (
@@ -57,11 +59,19 @@ const Signup = () => {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
-            <Link to="/vendor/registration" style={{ color: "black" }} className="forget-password">
+            <Link
+              to="/vendor/registration"
+              style={{ color: "black" }}
+              className="forget-password"
+            >
               Register as Vendor
             </Link>
             <button className="login-button" type="submit">
-              Register
+              {loading === true ? (
+                <Spinner animation="border" role="status" />
+              ) : (
+                "Register"
+              )}
             </button>
 
             <Link to="/" style={{ textDecoration: "none" }}>

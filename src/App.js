@@ -41,7 +41,6 @@ const App = () => {
           <Route path="/user-register" element={<Signup />} />
           <Route path="/subCategory/product/:id/:name" element={<SubProducts />} />
           <Route path="/search/product/:query" element={<Search />} />
-
           <Route path="/vendor/registration" element={<VendorRegistration />} />
         </Routes>
       </BrowserRouter>

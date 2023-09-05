@@ -63,7 +63,7 @@
   margin-top: 20px;
   font-weight: bold;
 }
-.Login-Page .Login-Div .container input::placeholder {
+.Login-Page .Login-Div .container input::placeholder{
   font-weight: bold;
 }
 .Login-Page .Login-Div .container .forget-password {
@@ -1593,62 +1593,9 @@
   text-decoration: none;
 }
 
+
 /* Bar Canvas */
 .Ham-canvas {
-  background: #e9e9e9;
-  padding: 20px !important;
-  padding-top: 50px !important;
-}
-.Ham-canvas .Heading {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  margin: auto;
-}
-.Ham-canvas .Heading p {
-  color: #000;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  margin: 0;
+  background: #E9E9E9;
 }
 
-.Ham-canvas .Heading i {
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.Ham-canvas ul{
-  padding: 0;
-  padding-top: 40px;
-}
-.Ham-canvas ul li {
-  padding-left: 0;
-  list-style: none;
-  color: #CBC273;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: normal;
-  display: block;
-  background-color: #fff;
-  width: 90%;
-  margin: auto;
-  padding: 10px;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-
-@media (max-width : 768px) {
-  .Heading-all{
-    font-size: 18px;
-  }
-  .full-width-product .Main .product-desc .title {
-    font-size: 14px;
-  }
-
-}

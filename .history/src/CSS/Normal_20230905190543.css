@@ -1603,8 +1603,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  margin: auto;
 }
 .Ham-canvas .Heading p {
   color: #000;
@@ -1617,12 +1615,10 @@
 
 .Ham-canvas .Heading i {
   font-size: 20px;
-  cursor: pointer;
 }
 
 .Ham-canvas ul{
   padding: 0;
-  padding-top: 40px;
 }
 .Ham-canvas ul li {
   padding-left: 0;
@@ -1632,23 +1628,4 @@
   font-style: normal;
   font-weight: 900;
   line-height: normal;
-  display: block;
-  background-color: #fff;
-  width: 90%;
-  margin: auto;
-  padding: 10px;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-
-@media (max-width : 768px) {
-  .Heading-all{
-    font-size: 18px;
-  }
-  .full-width-product .Main .product-desc .title {
-    font-size: 14px;
-  }
-
 }

@@ -20,8 +20,8 @@ export const userLogin = (payload, navigate ,loading) => {
         title: "Success !",
         message: "Welcome Back",
         type: "success",
-        insert: "top",
-        container: "top-center",
+        insert: "bottom",
+        container: "bottom-center",
         animationIn: ["animate__animated", "animate__fadeIn"],
         animationOut: ["animate__animated", "animate__fadeOut"],
         dismiss: {
@@ -38,8 +38,8 @@ export const userLogin = (payload, navigate ,loading) => {
         title: "Invalid !",
         message: msg,
         type: "danger",
-        insert: "top",
-        container: "top-center",
+        insert: "bottom",
+        container: "bottom-center",
         animationIn: ["animate__animated", "animate__fadeIn"],
         animationOut: ["animate__animated", "animate__fadeOut"],
         dismiss: {
@@ -52,20 +52,20 @@ export const userLogin = (payload, navigate ,loading) => {
   };
 };
 
-export const userRegistration = async(payload, navigate) => {
+export const userRegistration = async(payload, navigate , loading) => {
+  loading(true)
   try {
     const response = await axios.post(
       `${BaseUrl}/api/v1/vendor/registration`,
       payload
     );
     const msg = response.data.message;
-
     Store.addNotification({
       title: "Success !",
       message: msg,
       type: "info",
-      insert: "top",
-      container: "top-center",
+      insert: "bottom",
+      container: "bottom-center",
       animationIn: ["animate__animated", "animate__fadeIn"],
       animationOut: ["animate__animated", "animate__fadeOut"],
       dismiss: {
@@ -73,6 +73,7 @@ export const userRegistration = async(payload, navigate) => {
         onScreen: true,
       },
     });
+    loading(false)
     navigate("/");
   } catch (e) {
     const msg = e.response.data.msg;
@@ -80,8 +81,8 @@ export const userRegistration = async(payload, navigate) => {
       title: "Invalid !",
       message: msg,
       type: "danger",
-      insert: "top",
-      container: "top-center",
+      insert: "bottom",
+      container: "bottom-center",
       animationIn: ["animate__animated", "animate__fadeIn"],
       animationOut: ["animate__animated", "animate__fadeOut"],
       dismiss: {
@@ -89,5 +90,6 @@ export const userRegistration = async(payload, navigate) => {
         onScreen: true,
       },
     });
+    loading(false)
   }
 };

@@ -1617,7 +1617,6 @@
 
 .Ham-canvas .Heading i {
   font-size: 20px;
-  cursor: pointer;
 }
 
 .Ham-canvas ul{
@@ -1640,15 +1639,4 @@
   border-radius: 10px;
   cursor: pointer;
   margin-top: 20px;
-}
-
-
-@media (max-width : 768px) {
-  .Heading-all{
-    font-size: 18px;
-  }
-  .full-width-product .Main .product-desc .title {
-    font-size: 14px;
-  }
-
 }
