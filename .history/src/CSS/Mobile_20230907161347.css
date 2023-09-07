@@ -1,0 +1,210 @@
+/** @format */
+
+@media (max-width: 780px) {
+  .Login-Page .Login-Div {
+    max-width: 90%;
+  }
+  .Login-Page .Login-Div .logo {
+    font-size: 20px;
+  }
+  .Login-Page .Login-Div .container .head {
+    font-size: 18px;
+  }
+  .offer-products {
+    display: block;
+  }
+  .offer-products .left-container {
+    width: 100%;
+  }
+  .offer-products .left-container .img-container {
+    background-size: contain;
+    margin-top: 20px;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    height: 120px;
+  }
+  .offer-products .left-container .img-container h5 {
+    font-size: 18px;
+  }
+  .offer-products .left-container .img-container button {
+    font-size: 14px;
+    width: 120px;
+  }
+  .offer-products .right-container {
+    width: 100%;
+  }
+  .offer-products .left-container .two-sec {
+    display: block;
+    padding-top: 20px;
+  }
+  .offer-products .left-container .two-sec .right {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .offer-products .right-container .product-container .Main {
+    width: 47%;
+    margin-top: 10px;
+  }
+  .Trending-Product .Main {
+    width: 47%;
+  }
+  .full-width-product {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .full-width-product .Main {
+    width: 42%;
+  }
+  .Footer-Div .container .four-cont {
+    display: block;
+  }
+  .Footer-Div .container .social-links {
+    justify-content: flex-start;
+  }
+
+  .product-indivisual-container {
+    display: block;
+  }
+  .product-indivisual-container .left-container {
+    width: 100%;
+  }
+  .product-indivisual-container .left-container .Multiple-Image {
+    flex-wrap: wrap;
+  }
+  .product-indivisual-container .right-container {
+    width: 100%;
+    padding-top: 40px;
+  }
+  .Rating-Component {
+    padding: 20px;
+  }
+  .myHr {
+    margin-bottom: 10px;
+  }
+  .empty-cart img {
+    width: 100px;
+  }
+  .empty-cart p {
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+  .empty-cart .two-buttons {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .empty-cart .two-buttons button {
+    margin-top: 0;
+  }
+
+  /* Cart */
+  .Cart-container {
+    display: block;
+  }
+  .Cart-container .left-container {
+    width: 100%;
+  }
+  .Cart-container .left-container .main .img-container img {
+    width: 60px;
+  }
+  .Cart-container .left-container .main .desc-box p.title {
+    font-size: 16px;
+  }
+  .Cart-container .left-container .main .desc-box .multi-buttons {
+    display: block;
+  }
+  .Cart-container .left-container .main .desc-box .multi-buttons .Quantity{
+    justify-content: center;
+    min-width:  70px;
+    max-width: 120px;
+  }
+  .Cart-container .left-container .main .desc-box .multi-buttons .price{
+    text-align: left;
+  }
+  .Cart-container .left-container .main .desc-box .multi-buttons .rem{
+    text-align: left;
+    font-size: 14px;
+  }
+  .Cart-container .left-container .main .desc-box .multi-buttons p{
+    margin-top: 5px;
+  }
+  .Cart-container .left-container .main .desc-box .multi-buttons .Quantity{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .Cart-container .right-container {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .Cart-container .right-container p.summary {
+    font-size: 16px;
+  }
+  .Cart-container .right-container .two-sec p {
+    font-size: 16px;
+  }
+  /* -------------------- */
+  .shipping-address .Cart-container .left-container {
+    width: 100%;
+  }
+  .shipping-address .Cart-container .right-container {
+    width: 100%;
+  }
+
+  /* --------------------- */
+  .Thank-you img{
+    width: 70px;
+  }
+  .Thank-you p {
+    font-size: 20px;
+  }
+  .Thank-you .two-button {
+    flex-direction: column;
+  }
+  /* ---------- */
+  .my-orders .Heading-Cont {
+    flex-direction: column;
+  }
+  .my-orders .Heading-Cont p {
+    font-size: 18px;
+  }
+  .my-orders .Heading-Cont .search-box input {
+    font-size: 14px;
+  }
+  .my-orders .Order-List {
+    max-width: 90%;
+  }
+  .my-orders .Order-List .cont {
+    display: block;
+  }
+  .my-orders .Order-List .left-container {
+    width: 100%;
+  }
+  .my-orders .Order-List .left-container img {
+    max-width: 60px;
+  }
+  .my-orders .Order-List .left-container .description-box .title {
+    font-size: 16px;
+  }
+  .my-orders .Order-List .right-container {
+    width: 100%;
+  }
+  .my-orders .Order-List .right-container .two-sec {
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .my-orders .Order-List .right-container .two-sec p {
+    font-size: 16px;
+    margin: 0;
+  }
+  .my-orders .Order-List .right-container .three-buttons button {
+    font-size: 16px;
+    width: 120px;
+  }
+  .identity-dashboard{
+    flex-direction: column;
+  }
+}
