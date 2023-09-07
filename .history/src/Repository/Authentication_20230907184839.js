@@ -74,21 +74,21 @@ export const userRegistration = async (payload, navigate, loading) => {
     });
     localStorage.setItem("Verify_id", response.data.data._id);
     loading(false);
-    const otp = response.data.data.otp
+    console.log(response.data.data.otp)
     Store.addNotification({
       title: "Success !",
-      message: otp,
+      message: msg,
       type: "info",
       insert: "bottom",
       container: "bottom-center",
       animationIn: ["animate__animated", "animate__fadeIn"],
       animationOut: ["animate__animated", "animate__fadeOut"],
       dismiss: {
-        duration: 3000,
+        duration: 1000,
         onScreen: true,
       },
     });
-    navigate("/verify-otp");
+    // navigate("/verify-otp");
   } catch (e) {
     const msg = e.response.data.msg;
     Store.addNotification({
@@ -126,20 +126,6 @@ export const forget_Password = async (setLoading, payload, navigate) => {
       animationOut: ["animate__animated", "animate__fadeOut"],
       dismiss: {
         duration: 1000,
-        onScreen: true,
-      },
-    });
-    const otp = response.data.data.otp
-    Store.addNotification({
-      title: "Success !",
-      message: otp,
-      type: "info",
-      insert: "bottom",
-      container: "bottom-center",
-      animationIn: ["animate__animated", "animate__fadeIn"],
-      animationOut: ["animate__animated", "animate__fadeOut"],
-      dismiss: {
-        duration: 3000,
         onScreen: true,
       },
     });

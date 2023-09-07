@@ -129,20 +129,6 @@ export const forget_Password = async (setLoading, payload, navigate) => {
         onScreen: true,
       },
     });
-    const otp = response.data.data.otp
-    Store.addNotification({
-      title: "Success !",
-      message: otp,
-      type: "info",
-      insert: "bottom",
-      container: "bottom-center",
-      animationIn: ["animate__animated", "animate__fadeIn"],
-      animationOut: ["animate__animated", "animate__fadeOut"],
-      dismiss: {
-        duration: 3000,
-        onScreen: true,
-      },
-    });
     setLoading(false);
     navigate("/recover-password");
   } catch (e) {
