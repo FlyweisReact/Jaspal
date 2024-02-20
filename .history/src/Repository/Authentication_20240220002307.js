@@ -3,13 +3,11 @@ import { Store } from "react-notifications-component";
 import axios from "axios";
 import { Login } from "../store/slices/authSlice";
 
-// const BaseUrl = "https://ecommerce-backend-ochre-phi.vercel.app";
-const BaseUrl = process.env.REACT_APP_BASE_URL;
+const BaseUrl = "https://ecommerce-backend-ochre-phi.vercel.app";
 
 export const userLogin = (payload, navigate, loading) => {
   return async (dispatch) => {
     loading(true);
-
     try {
       const response = await axios.post(
         `${BaseUrl}/api/v1/vendor/login/withPassword`,
@@ -55,6 +53,7 @@ export const userLogin = (payload, navigate, loading) => {
 
 export const userRegistration = async (payload, navigate, loading) => {
   loading(true);
+  
   try {
     const response = await axios.post(
       `${BaseUrl}/api/v1/vendor/registration`,
@@ -90,7 +89,7 @@ export const userRegistration = async (payload, navigate, loading) => {
         onScreen: true,
       },
     });
-    navigate("/verify-otp");
+    //navigate is missing
   } catch (e) {
     const msg = e.response.data.msg;
     Store.addNotification({

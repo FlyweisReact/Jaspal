@@ -4,7 +4,7 @@ import axios from "axios";
 import { Store } from "react-notifications-component";
 
 // const Baseurl = "https://ecommerce-backend-ochre-phi.vercel.app/";
-const Baseurl = process.env.REACT_APP_BASE_URL+"/";
+const Baseurl = process.env.REACT_APP_BASE_URL;
 console.log(Baseurl, "baserl is print");
 
 export const getCategorybyGender = async (

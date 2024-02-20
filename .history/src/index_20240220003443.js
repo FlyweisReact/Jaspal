@@ -10,8 +10,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-notifications-component/dist/theme.css";
-// import dotenv from "dotenv";
-// dotenv.config();
+import dotenv from "dotenv";
+dotenv.config();
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

@@ -9,7 +9,7 @@ const BaseUrl = process.env.REACT_APP_BASE_URL;
 export const userLogin = (payload, navigate, loading) => {
   return async (dispatch) => {
     loading(true);
-
+    
     try {
       const response = await axios.post(
         `${BaseUrl}/api/v1/vendor/login/withPassword`,
@@ -31,7 +31,7 @@ export const userLogin = (payload, navigate, loading) => {
           onScreen: true,
         },
       });
-      navigate("/homepage");
+      //missing navigate
       loading(false);
     } catch (e) {
       loading(false);

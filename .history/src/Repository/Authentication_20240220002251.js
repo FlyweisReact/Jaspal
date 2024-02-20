@@ -3,13 +3,11 @@ import { Store } from "react-notifications-component";
 import axios from "axios";
 import { Login } from "../store/slices/authSlice";
 
-// const BaseUrl = "https://ecommerce-backend-ochre-phi.vercel.app";
-const BaseUrl = process.env.REACT_APP_BASE_URL;
+const BaseUrl = "https://ecommerce-backend-ochre-phi.vercel.app";
 
 export const userLogin = (payload, navigate, loading) => {
   return async (dispatch) => {
     loading(true);
-
     try {
       const response = await axios.post(
         `${BaseUrl}/api/v1/vendor/login/withPassword`,
@@ -76,7 +74,7 @@ export const userRegistration = async (payload, navigate, loading) => {
     });
     localStorage.setItem("Verify_id", response.data.data._id);
     loading(false);
-    const otp = response.data.data.otp;
+    const otp = response.data.data.otp
     Store.addNotification({
       title: "Success !",
       message: otp,
@@ -90,7 +88,7 @@ export const userRegistration = async (payload, navigate, loading) => {
         onScreen: true,
       },
     });
-    navigate("/verify-otp");
+    
   } catch (e) {
     const msg = e.response.data.msg;
     Store.addNotification({
@@ -131,7 +129,7 @@ export const forget_Password = async (setLoading, payload, navigate) => {
         onScreen: true,
       },
     });
-    const otp = response.data.data.otp;
+    const otp = response.data.data.otp
     Store.addNotification({
       title: "Success !",
       message: otp,

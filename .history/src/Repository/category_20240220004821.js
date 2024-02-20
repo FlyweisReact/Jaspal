@@ -4,7 +4,7 @@ import axios from "axios";
 import { Store } from "react-notifications-component";
 
 // const Baseurl = "https://ecommerce-backend-ochre-phi.vercel.app/";
-const Baseurl = process.env.REACT_APP_BASE_URL+"/";
+const Baseurl = process.env.REACT_APP_BASE_URL;
 console.log(Baseurl, "baserl is print");
 
 export const getCategorybyGender = async (
@@ -16,7 +16,7 @@ export const getCategorybyGender = async (
   setLoading(true);
   try {
     const response = await axios.get(
-      `${Baseurl}api/v1/user/allCategory/${payload}`
+      `${Baseurl}/api/v1/user/allCategory/${payload}`
     );
     setResponse(response.data.data);
     idSelector(response.data.data?.[0]?._id);
